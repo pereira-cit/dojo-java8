@@ -6,6 +6,6 @@ package com.ciandt.ddig.dojo;
 public class DDIG {
 
     public static void main(String[] args) {
-        
+
     }
 }
