@@ -1,5 +1,6 @@
 package com.ciandt.ddig.dojo.util;
 
+import com.ciandt.ddig.dojo.model.Exam;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -31,6 +32,13 @@ public class DatasetReaderTest {
 
         assertThat(readHeader, contains("name", "code", "price"));
         assertThat(readHeader, hasSize(3));
+    }
+
+    @Test
+    public void readDataset(){
+        final List<Exam> examList = reader.readExams();
+
+        assertThat(examList, hasSize(229));
     }
 
     private DatasetReader createDatasetReader() {

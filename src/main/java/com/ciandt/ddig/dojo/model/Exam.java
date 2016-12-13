@@ -15,6 +15,10 @@ public class Exam {
         this.price = price;
     }
 
+    public Exam() {
+
+    }
+
     public String getName() {
         return name;
     }
